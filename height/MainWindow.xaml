@@ -1,0 +1,64 @@
+﻿<Window x:Class="height.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:height"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label
+                Content="Рост папы"
+                FontSize="23px"
+                FontStyle="Italic"
+                Foreground="Purple"
+                FontFamily="Cascadia code"
+                Margin="100,100,100,100" Grid.ColumnSpan="2"
+                />
+        <TextBox MinWidth="70" x:Name="tb1" Height="43" Margin="280,100,82,291"  />
+
+        <Label
+            Content="Рост мамы"
+            FontSize="23px"
+            FontStyle="Italic"
+            Foreground="Purple"
+            FontFamily="Cascadia code"
+            Margin="100,181,100,19" Grid.ColumnSpan="2"
+                />
+        <TextBox MinWidth="70" x:Name="tb2" Height="43" Margin="280,181,82,210"  />
+
+        <Label
+            Content="Пол ребенка"
+            FontSize="23px"
+            FontStyle="Italic"
+            Foreground="Purple"
+            FontFamily="Cascadia code"
+            Margin="100,250,100,-50" Grid.ColumnSpan="2"
+                />
+        <ComboBox MinWidth="70" x:Name="cb" Height="43" Margin="280,250,82,141"  />
+
+
+        <Button Click = "cal"
+                    Content = "Рассчитать"
+                    x:Name = "formgo"
+                    FontSize = "20"
+                   FontFamily = "Cascadia Code"
+                   Foreground = "Black" 
+                   Background = "Orange" 
+                   Margin="533,100,100,276" Grid.ColumnSpan="2" />
+
+        <Label Content = ""
+                   Name = "otvet"
+                   Margin = "488,172,55,171"
+                   FontSize = "20"
+                   FontFamily = "Cascadia Code"
+                   Foreground = "Black" Grid.ColumnSpan="2" />
+
+
+    </Grid>
+</Window>
